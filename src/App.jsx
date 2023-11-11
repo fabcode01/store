@@ -14,6 +14,23 @@ function App() {
     pHolder.classList.remove('pHolder-Anim')
   }
 
+  //animacao do pub
+
+  function handlePub(){
+    let cep = document.getElementById('cep')
+    let pubIcon = document.getElementById('pubIcon')
+    
+    cep.style.display = 'none'
+
+    if(cep.style.display === 'none'){
+      pubIcon.classList.add('fa-x')
+    } else if(cep.style.display === 'flex'){
+      pubIcon.classList.remove('fa-bars')
+    }
+    
+    
+    
+  }
 
 
   return (
@@ -44,7 +61,7 @@ function App() {
 
         <div className="pub">
               
-          <div className="cep">
+          <div id='cep' className="cep">
           <i class="fa-solid fa-location-dot"></i>
           <p>informe seu CEP</p>
           </div>
@@ -53,8 +70,9 @@ function App() {
             <ul className="list">
 
               <div className="list-title">
-              <i class="fa-solid fa-bars"></i>
-              <li className='list-title-itens'>Toda as categorias</li>
+             
+              <i id='pubIcon' class="fa-solid fa-bars" onClick={handlePub}></i>
+              <li className='list-title-itens' onClick={handlePub}>Todas as categorias</li>
               </div>
               
               <div className="list-section">

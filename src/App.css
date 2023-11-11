@@ -1,12 +1,13 @@
 *{
   padding: 0;
   margin: 0;
- 
+  
   font-family: Arial, Helvetica, sans-serif;
 }
 
+
 .header-bar{
-  width: 100vw;
+  width: 100%;
   background-color: rgb(43, 43, 43);
   height: 1.8em;
 }
@@ -112,12 +113,18 @@ a{
 
 
 .pub, .cep{
+  user-select: none;
   display: flex;
   align-items: center;
   background-color: #fff;
   height: 3vw;
   padding: 0px 5px;
+  transition: all 0.5s;
+  cursor: pointer;
 }
+
+
+
 
 
 .cep  p{ 
@@ -160,6 +167,7 @@ a{
 .pub ul li{
   margin: 0 20px;
 }
+
 
 
 
