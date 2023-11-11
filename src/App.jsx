@@ -17,13 +17,13 @@ function App() {
 
 
   return (
-    <>
+    <div>
       <div className="header-bar"></div>
         <nav>
           <div className="logo"></div>
 
             <label className='search-container'>
-              <input type="text" name="serch-container" id="search-itens" className='search-box'/>
+              <input onBlur={handlePlaceHolder} onFocus={handleAnimPlaceHolder} type="text" name="serch-container" id="search-itens" className='search-box'/>
               <p id='search-placeholder' className='search-placeholder'>O que você procura hoje?</p>
 
               <i class="fa-solid fa-magnifying-glass"></i>
@@ -66,7 +66,8 @@ function App() {
           </div>
 
      
-    </>
+    </div>
+    </div>
   )
 }
 
