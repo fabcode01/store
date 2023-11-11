@@ -32,6 +32,8 @@ function App() {
 
         <h1>Testando</h1>
         <h3>olá</h3>
+
+        <h6>opa</h6>
      
     </>
   )
