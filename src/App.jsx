@@ -20,14 +20,18 @@ function App() {
     let cep = document.getElementById('cep')
     let pubIcon = document.getElementById('pubIcon')
     
-    cep.style.display = 'none'
-
-    if(cep.style.display === 'none'){
-      pubIcon.classList.add('fa-x')
-    } else if(cep.style.display === 'flex'){
-      pubIcon.classList.remove('fa-bars')
-    }
     
+
+    if(pubIcon.className === 'fa-solid fa-bars'){
+
+      cep.style.display = 'none'
+      pubIcon.className = 'fa-solid fa-x'
+
+    } else if(pubIcon.className === 'fa-solid fa-x'){
+      
+      cep.style.display = 'flex'
+      pubIcon.className = 'fa-solid fa-bars'
+    }
     
     
   }
