@@ -26,6 +26,10 @@ ul{
   font-weight: bold;
 }
 
+a{
+  text-decoration: none;
+  color: grey;
+}
 
 
 .logo{
@@ -110,21 +114,47 @@ ul{
 .pub, .cep{
   display: flex;
   align-items: center;
-  background-color: antiquewhite;
-  padding: 5px 5px;
+  background-color: #fff;
+  height: 3vw;
+  padding: 0px 5px;
 }
 
 
-.cep p{ 
-  margin-left: 10px;
+.cep  p{ 
+  padding-right: 80px;
+  margin: 0 5px;
   font-size: 0.8em;
+  color: grey;
 }
+
+.cep::after{
+  content: '';
+  height: 40px;
+ 
+  border-right: 1px solid grey;
+}
+
 
 
 .pub ul {
   display: flex;
   list-style: none;
 
+}
+
+.list-title{
+  display: flex;
+  padding-left: 20px;
+}
+
+.list-title i{
+  margin-right: -10px;
+  font-size: 1.2em;
+}
+
+.list-section{
+  display: flex;
+  color: grey;
 }
 
 .pub ul li{

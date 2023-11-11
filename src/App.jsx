@@ -57,7 +57,7 @@ function App() {
             <li className="list-itens">Infantil</li>
           </ul>
         </div>
-      </div>
+          </div>
 
 
     </>
