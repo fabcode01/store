@@ -17,7 +17,9 @@ function App() {
               <i class="fa-solid fa-magnifying-glass"></i>
             </label>
             
-          
+           
+
+
           
           
             <i class="fa-regular fa-heart"></i>
@@ -28,7 +30,7 @@ function App() {
           
         </nav>
 
-
+        <h1>Testando</h1>
      
     </>
   )
