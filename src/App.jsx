@@ -30,11 +30,22 @@ function App() {
           
         </nav>
 
-        <h1>Testando</h1>
-        <h3>olá</h3>
+        <div className="pub">
+              
+          <div className="cep">
+          <i class="fa-solid fa-location-dot"></i>
+          <p>informe seu CEP</p>
+          </div>
 
-        <h6>opa</h6>
-        <h1>EAE SAUVE</h1>
+          <div className="header-list">
+            <ul className="list">
+              <li className="list-itens">Feminino</li>
+              <li className="list-itens">Masculino</li>
+              <li className="list-itens">Infantil</li>
+            </ul>
+          </div>
+            </div>
+
      
     </>
   )

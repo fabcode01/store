@@ -21,7 +21,10 @@ nav{
   height: 4.6em;
 }
 
-
+ul{
+  font-size: 14px;
+  font-weight: bold;
+}
 
 
 
@@ -87,6 +90,30 @@ nav{
   color: white;
 }
 
+
+.pub, .cep{
+  display: flex;
+  align-items: center;
+  background-color: antiquewhite;
+  padding: 5px 5px;
+}
+
+
+.cep p{ 
+  margin-left: 10px;
+  font-size: 0.8em;
+}
+
+
+.pub ul {
+  display: flex;
+  list-style: none;
+
+}
+
+.pub ul li{
+  margin: 0 20px;
+}
 
 
 
