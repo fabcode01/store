@@ -2,7 +2,19 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
-    
+  //Animacao do placeholder
+
+  function handleAnimPlaceHolder() {
+    let pHolder = document.getElementById('search-placeholder')
+    pHolder.classList.add('pHolder-Anim')
+  }
+
+  function handlePlaceHolder() {
+    let pHolder = document.getElementById('search-placeholder')
+    pHolder.classList.remove('pHolder-Anim')
+  }
+
+
 
   return (
     <>
@@ -52,7 +64,6 @@ function App() {
               </div>
             </ul>
           </div>
-            </div>
 
      
     </>
