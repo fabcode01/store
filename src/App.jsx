@@ -39,9 +39,17 @@ function App() {
 
           <div className="header-list">
             <ul className="list">
-              <li className="list-itens">Feminino</li>
-              <li className="list-itens">Masculino</li>
-              <li className="list-itens">Infantil</li>
+
+              <div className="list-title">
+              <i class="fa-solid fa-bars"></i>
+              <li className='list-title-itens'>Toda as categorias</li>
+              </div>
+              
+              <div className="list-section">
+              <li className="list-itens"><a href="">Feminino</a></li>
+              <li className="list-itens"><a href="">Masculino</a></li>
+              <li className="list-itens"><a href="">Infantil</a></li>
+              </div>
             </ul>
           </div>
             </div>
