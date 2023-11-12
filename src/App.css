@@ -62,7 +62,7 @@ a{
 }
 
 .search-box{
-  z-index: 0;
+ 
   height: 23px;
   width: 90%;
   padding: 10px;
@@ -119,9 +119,10 @@ a{
   background-color: #fff;
   height: 3vw;
   padding: 0px 5px;
-  transition: all 0.5s;
+  
   cursor: pointer;
 }
+
 
 
 
@@ -166,6 +167,14 @@ a{
 
 .pub ul li{
   margin: 0 20px;
+}
+
+.pubOn{
+  display: none;
+}
+
+.pubOff{
+  display: flex;
 }
 
 
