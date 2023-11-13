@@ -100,12 +100,23 @@ function App() {
             </div>
           </ul>
         </div>
+      </div>
+
+      <div className="banner-homer">
+          <img src="img/banner.jpg" alt="" />
+        </div>
 
 
+      <div className="home-banner-section">
+        <div className='banner-photo'>
+          
+          </div>
+      </div>
 
 
       </div>
-    </div>
+  
+
   )
 }
 
