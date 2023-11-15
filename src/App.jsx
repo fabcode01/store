@@ -1,8 +1,17 @@
 import { useState } from 'react'
 import './App.css'
 import CepModal from '../components/CepModal'
+import AllCategorys from '../components/AllCategorys'
+
+
 
 function App() {
+  var cep = document.getElementById('cepBox')
+  var pubIcon = document.getElementById('pubIcon')
+  var listSection = document.getElementById('list-section')
+  var containerCategory = document.getElementById('allCategory')
+  //ativar AllCategogy
+
 
 
   //Animacao do placeholder
@@ -20,9 +29,7 @@ function App() {
   //animacao do pub
 
   function handlePub() {
-    let cep = document.getElementById('cepBox')
-    let pubIcon = document.getElementById('pubIcon')
-    let listSection = document.getElementById('list-section')
+
 
 
 
@@ -31,12 +38,17 @@ function App() {
       cep.className = 'cep pubOn'
       pubIcon.className = 'fa-solid fa-x'
       listSection.style.display = 'none'
+      containerCategory.style.display = 'flex'
+
+
+
 
     } else if (pubIcon.className === 'fa-solid fa-x') {
 
       cep.classList.remove('pubOn')
       pubIcon.className = 'fa-solid fa-bars'
       listSection.style.display = 'flex'
+      containerCategory.style.display = 'none'
     }
 
   }
@@ -102,20 +114,22 @@ function App() {
         </div>
       </div>
 
+      <AllCategorys />
+
       <div className="banner-homer">
-          <img src="img/banner.jpg" alt="" />
-        </div>
+        <img src="img/banner.jpg" alt="" />
+      </div>
 
 
       <div className="home-banner-section">
         <div className='banner-photo'>
-          
-          </div>
+
+        </div>
       </div>
 
 
-      </div>
-  
+    </div>
+
 
   )
 }

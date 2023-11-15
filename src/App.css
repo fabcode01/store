@@ -187,6 +187,7 @@ a{
   position: relative;
 }
 .banner-photo {
+  z-index: -2;
   background: url(img/bannermain.webp) no-repeat center;
   background-size: cover;
   width: 100%;
