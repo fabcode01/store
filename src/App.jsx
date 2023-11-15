@@ -6,10 +6,7 @@ import AllCategorys from '../components/AllCategorys'
 
 
 function App() {
-  var cep = document.getElementById('cepBox')
-  var pubIcon = document.getElementById('pubIcon')
-  var listSection = document.getElementById('list-section')
-  var containerCategory = document.getElementById('allCategory')
+
   //ativar AllCategogy
 
 
@@ -29,7 +26,10 @@ function App() {
   //animacao do pub
 
   function handlePub() {
-
+    var cep = document.getElementById('cepBox')
+    var pubIcon = document.getElementById('pubIcon')
+    var listSection = document.getElementById('list-section')
+    var containerCategory = document.getElementById('allCategory')
 
 
 
